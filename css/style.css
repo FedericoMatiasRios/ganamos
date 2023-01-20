@@ -2,6 +2,7 @@ body {
     background-image: url('../img/fondo.png');
     background-size: cover;
     color: #d0d0da;
+    background-attachment: fixed;
 }
 
 header {
