@@ -269,17 +269,19 @@ footer p{
 @media only screen and (max-width: 600px) {
     body {
       background-size: 300vw 200vw;
-      margin-top: 48vw;
-      transform: scale(2);
+  /*    margin-top: 48vw;
+      transform: scale(2); */
       overflow-x: hidden;
     }
 
     header img {
         margin-left: unset;
+        width: 59.5vw;
     }
     
     header p {
         margin-left: unset;
+        font-size: 3.26vw;
     }
 
     main {
@@ -294,7 +296,27 @@ footer p{
     #registrate {
         margin: unset;
         border-radius: 5px;
-        height: 32.5vw;
+        height: 60.5vw;
+        width: 48.4vw;
+    }
+
+    section p:first-child {
+        font-size: 2.6vw;
+        line-height: unset;
+    }
+
+    section input {
+        height: 4.15vw;
+        margin: 0.7vw 2.6vw;
+        border-radius: 0.8vw;
+    }
+
+    #nombre-apellido input:first-child {
+        border-radius: 0.8vw 0 0 0.8vw;
+    }
+    
+    #nombre-apellido input:nth-child(2){
+        border-radius: 0 0.8vw 0.8vw 0;
     }
 
     .vw16 {
@@ -316,6 +338,23 @@ footer p{
         font-size: 1.5vw;
     }
 
+    section:nth-child(2),footer {
+        transform: scale(2);
+    }
+
+    section:nth-child(2) {
+        margin-top: 18vw;
+    }
+
+    #terminos p {
+        font-size:1.43vw;
+        margin-top: 1.8vw;
+    }
+
+    #checkbox {
+        width: 2vw;
+    }
+
 
     .juegos {
         margin-top: -6.5vw;
@@ -329,7 +368,7 @@ footer p{
     footer {
         width: unset;
         margin-left: unset;
-        margin-top: -7vw;
+        margin-top: 10vw;
     }
 
     footer p {
@@ -341,10 +380,11 @@ footer p{
     }
 
     ::placeholder {
-        color: #cccccc;
-        font-family: robotoRegular;
-        font-size: 0.72vw;
-        padding: 0.4vw;
+        font-size: 1.72vw;
+    }
+
+    button {
+        height: 5.6vw;
     }
 
   }
