@@ -426,10 +426,12 @@ footer p{
 
     footer p {
         margin-left: unset;
+        margin-top: 2.6vw;
     }
 
     .pagos {
         margin-bottom:3vw;
+        margin-top: unset;
     }
 
     ::placeholder {
