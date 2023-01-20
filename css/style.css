@@ -1,7 +1,7 @@
 body {
-    background-image: url('../img/landing.jpg');
+    background-image: url('../img/fondo.png');
     background-size: cover;
-    color: #fff;
+    color: #d0d0da;
 }
 
 header {
@@ -28,10 +28,10 @@ main {
 }
 
 #registrate {
-    background-color: #db2d75a8;
+    background-color: #ffffff0a;
     border-radius: 20px;
-    height: 29vw;
-    margin-top: 0.6vw;
+    height: 29.1vw;
+    margin-top: 0.5vw;
     width: 24.2vw;
     margin-left: 12.8vw;
     display: flex;
@@ -42,15 +42,30 @@ section p:first-child {
     font-size: 1.1vw;
     text-align: center;
     margin: 2vw;
-    margin-top: 2vw;
+    margin-top: vw;
+    margin-left: 2.3vw;
+    line-height: 1.2vw;
+    transform: scale(1.016, 0.9);
+}
+
+section:nth-child(2) p:first-child {
+    margin-left: 0.9vw;
 }
 
 section input {
-    margin: 0.5vw 1.3vw 0.2vw 1.3vw;
+    margin: 0.5vw 1.2vw 0.2vw 1.4vw;
     padding: 0.7vw;
     border-radius: 0.4vw;
     border: 1px solid #ced4da;
     height: 1.1vw;
+}
+
+
+::placeholder {
+    color: #cccccc;
+    font-family: robotoRegular;
+    font-size: 0.72vw;
+    padding: 0.4vw;
 }
 
 #nombre-apellido {
@@ -70,17 +85,15 @@ section input {
 }
 
 form {
-    margin-top: -1vw;
+    margin-top: -0.65vw;
     display: flex;
     flex-direction: column;
 }
 
 #terminos {
     display:flex;
-}
-
-#terminos input {
-    
+    margin-left: 0.25vw;
+    margin-top: 0.4vw;
 }
 
 #terminos p {
@@ -96,23 +109,66 @@ button {
     color: #fff;
     width: 90%;
     margin-top: 0.1vw;
-    height: 3vw;
+    margin-left: 0.25vw;
+    height: 2.8vw;
     align-self: center;
     font-size: 1.4vw;
-    opacity: 0.5;
+    cursor: pointer;
 }
 
 section:nth-child(2) {
     margin-left: 12.2vw;
-    margin-top: -1vw;
+    margin-top: -1.4vw;
 }
 
-#ruleta {
+section:nth-child(2) p {
+    margin-left: 0.88vw;
+}
+
+.flexRow {
     display: flex;
 }
 
-.circulos {
+.circulo {
     width: 11vw;
+    margin-left: -0.7vw;
+}
+
+.circulos {
+    width: 9.5vw;
+    background-color: #ffffff0a;
+    border-radius: 50%/25%;
+    height: 15.5vw;
+}
+
+.first {
+    margin: 0 0.6vw;
+}
+
+.second {
+    margin: 0 1.4vw;
+}
+
+.third {
+    margin: 0 0.5vw;
+}
+
+.vw16 {
+    position: absolute;
+    width: 15.4vw;
+    top: 28vw;
+}
+
+.ruleta {
+    margin-left: -2.3vw;
+}
+
+.cartas {
+    margin-left: 8.8vw;
+}
+
+.beccart {
+    margin-left: 20.5vw;
 }
 
 .italic {
@@ -123,8 +179,65 @@ section:nth-child(2) {
     font-family: robotoBoldItalic;
 }
 
+.bold {
+    font-family: robotoBold;
+}
+
 .orange {
     color: #fbb03b;
+}
+
+.dosmil {
+    font-size: 4.5vw;
+    font-family: avantage;
+    position: absolute;
+    top: 36.7vw;
+    left: 56.1vw;
+    transform: scaleX(1.18);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 40%;
+}
+
+.pagos {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8vw;
+}
+
+footer p{
+    font-size: 1.25vw;
+    margin-top: 3.6vw;
+    margin-left: -2.4vw;
+    transform: scaleX(1.1);
+}
+
+#mp {
+    width: 8.4vw;
+    margin-left: -1vw;
+}
+
+#rp {
+    width: 7.5vw;
+    margin-left: 3.5vw;
+}
+
+#pf {
+    width: 4.5vw;
+    margin-left: 3vw;
+
+}
+
+#bb {
+    width: 7vw;
+    margin-left: 3vw;
+
 }
 
 /* Fonts */
@@ -140,3 +253,98 @@ section:nth-child(2) {
     font-family: roboto;
     src: url(../font/Roboto-Light_0.ttf);
 }
+@font-face {
+    font-family: avantage;
+    src: url(../font/Avantage.ttf);
+  }
+@font-face {
+    font-family: robotoBold;
+    src: url(../font/Roboto-Bold_0.ttf);
+  }
+@font-face {
+    font-family: robotoRegular;
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-size: 300vw 200vw;
+      margin-top: 48vw;
+      transform: scale(2);
+      overflow-x: hidden;
+    }
+
+    header img {
+        margin-left: unset;
+    }
+    
+    header p {
+        margin-left: unset;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section {
+        display: flex;
+    }
+
+    #registrate {
+        margin: unset;
+        border-radius: 5px;
+        height: 32.5vw;
+    }
+
+    .vw16 {
+        top: unset;
+    }
+
+    section:nth-child(2) {
+        flex-direction: column;
+        margin-left: unset;
+        margin-top: 0vw;
+    }
+
+    section:nth-child(2) p {
+        margin-left: unset;
+        align-self: center;
+    }
+
+    section:nth-child(2) p:first-child {
+        font-size: 1.5vw;
+    }
+
+
+    .juegos {
+        margin-top: -6.5vw;
+    }
+
+    .dosmil {
+        position: unset;
+        margin-top: 12vw;
+    }
+
+    footer {
+        width: unset;
+        margin-left: unset;
+        margin-top: -7vw;
+    }
+
+    footer p {
+        margin-left: unset;
+    }
+
+    .pagos {
+        margin-bottom:3vw;
+    }
+
+    ::placeholder {
+        color: #cccccc;
+        font-family: robotoRegular;
+        font-size: 0.72vw;
+        padding: 0.4vw;
+    }
+
+  }

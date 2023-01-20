@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganamos</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
@@ -21,7 +21,8 @@
                 <p>
                     <span class="italicBold orange">Registrate </span>
                     <span class="italic">gratis y obtené un </span>
-                    <span class="italicBold orange">bono del 10% </span>
+                    <span class="bold orange">bono del </span>
+                    <span class="bold orange">10% </span>
                     <span class="italic">en tu primer deposito</span>
                 </p>
                 <form action="">
@@ -46,13 +47,27 @@
                 <span class="italic">Contamos con Crupiers en vivo de </span>
                 <span class="italicBold">habla hispana</span>
             </p>
-            <div id="ruletas">
-                <img class="circulos" src="./img/1.png" alt="">
-                <img class="circulos" src="./img/2.png" alt="">
-                <img class="circulos" src="./img/3.png" alt="">
+            <div class="flexRow">
+                <div class="circulos first"><img class="circulo" src="./img/1.png" alt=""></div>
+                <div class="circulos second"><img class="circulo" src="./img/2.png" alt=""></div>
+                <div class="circulos third"><img class="circulo" src="./img/3.png" alt=""></div>
             </div>
+            <div class="flexRow juegos">
+                <img class="vw16 ruleta" src="./img/ruleta.png" alt="">
+                <img class="vw16 cartas" src="./img/cartas.png" alt="">
+                <img class="vw16 beccart" src="./img/baccart.png" alt="">
+            </div>
+            <p class="dosmil"><span class="orange">+ 2.000 </span><span>Slots</span></p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p><span class="italicBold orange">Pagamos </span><span class="italic">los premios al instante!</span></p>
+        <div class="pagos">
+            <img id="mp" src="./img/mercadopago.png" alt="">
+            <img id="rp" src="./img/rapipago.png" alt="">
+            <img id="pf" src="./img/pagofacil.png" alt="">
+            <img id="bb" src="./img/brubank.png" alt="">
+        </div>
+    </footer>
 </body>
 </html>
