@@ -1,6 +1,6 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -320,7 +320,6 @@ footer p{
 }
 
 @media only screen and (max-width: 600px) {
-    
     header img {
         margin-left: unset;
         width: 59.5vw;
