@@ -39,6 +39,22 @@ main {
     flex-direction: column;
 }
 
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../img/flecha.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.75em auto, 100%;
+    border-left: 1px solid black;
+}
+  
+  /* For IE (thanks to @SaiManoj) */
+select::-ms-expand {
+display: none;
+}
+
 section p:first-child {
     font-size: 1.1vw;
     text-align: center;
@@ -59,14 +75,25 @@ section input {
     border-radius: 0.4vw;
     border: 1px solid #ced4da;
     height: 1.1vw;
+    color: #cccccc;
+    padding-left: 1.1vw;
 }
 
+section select {
+    margin: 0.5vw 1.2vw 0.2vw 1.4vw;
+    border-radius: 0.4vw;
+    padding: 0.7vw;
+    border: 1px solid #ced4da;
+    height: 2.695vw;
+    color: #cccccc;
+    font-family: robotoRegular;
+    font-size: 0.72vw;
+}
 
 ::placeholder {
     color: #cccccc;
     font-family: robotoRegular;
     font-size: 0.72vw;
-    padding: 0.4vw;
 }
 
 #nombre-apellido {
@@ -77,12 +104,32 @@ section input {
     margin-right: 0;
     width: 50%;
     border-radius: 0.4vw 0 0 0.4vw;
+    border-right: 0;
 }
 
 #nombre-apellido input:nth-child(2){
     margin-left: 0;
     width: 50%;
     border-radius: 0 0.4vw 0.4vw 0;
+    border-left: 0;
+}
+
+#divisor {
+    width: 1px;
+    background: #ced4da;
+    position: absolute;
+    height: 2vw;
+    margin-top: 0.8vw;
+    margin-left: 12.15vw;
+}
+
+#divisor2 {
+    width: 1px;
+    background: #ced4da;
+    position: absolute;
+    height: 2vw;
+    margin-top: -3vw;
+    margin-left: 20.45vw;
 }
 
 form {
@@ -309,6 +356,13 @@ footer p{
         border-radius: 0.8vw;
     }
 
+    section select {
+        margin: 0.7vw 2.6vw;
+        border-radius: 0.8vw;
+        height: 6.09vw;
+        font-size: 1.72vw;
+    }
+
     #nombre-apellido input:first-child {
         border-radius: 0.8vw 0 0 0.8vw;
     }
@@ -383,6 +437,24 @@ footer p{
 
     button {
         height: 5.6vw;
+    }
+
+    #divisor {
+        width: 1px;
+        background: #ced4da;
+        position: absolute;
+        height: 4vw;
+        margin-top: 1.6vw;
+        margin-left: 24.15vw;
+    }
+
+    #divisor2 {
+        width: 1px;
+        background: #ced4da;
+        position: absolute;
+        height: 4vw;
+        margin-top: -6vw;
+        margin-left: 40.25vw;
     }
 
   }
