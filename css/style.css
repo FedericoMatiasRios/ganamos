@@ -1,0 +1,142 @@
+body {
+    background-image: url('../img/landing.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img {
+    width: 29.5vw;
+    margin-top: 1.2vw;
+    margin-left: -2.2vw;
+}
+
+header p {
+    font-size: 1.76vw;
+    margin-top: 0.6vw;
+    margin-left: -3.8vw;
+}
+
+main {
+    display: flex;
+}
+
+#registrate {
+    background-color: #db2d75a8;
+    border-radius: 20px;
+    height: 29vw;
+    margin-top: 0.6vw;
+    width: 24.2vw;
+    margin-left: 12.8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section p:first-child {
+    font-size: 1.1vw;
+    text-align: center;
+    margin: 2vw;
+    margin-top: 2vw;
+}
+
+section input {
+    margin: 0.5vw 1.3vw 0.2vw 1.3vw;
+    padding: 0.7vw;
+    border-radius: 0.4vw;
+    border: 1px solid #ced4da;
+    height: 1.1vw;
+}
+
+#nombre-apellido {
+    display: flex;
+}
+
+#nombre-apellido input:first-child {
+    margin-right: 0;
+    width: 50%;
+    border-radius: 0.4vw 0 0 0.4vw;
+}
+
+#nombre-apellido input:nth-child(2){
+    margin-left: 0;
+    width: 50%;
+    border-radius: 0 0.4vw 0.4vw 0;
+}
+
+form {
+    margin-top: -1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#terminos {
+    display:flex;
+}
+
+#terminos input {
+    
+}
+
+#terminos p {
+    font-size:0.73vw;
+    font-family: roboto;
+    margin-left: -0.6vw;
+}
+
+button {
+    background-image: linear-gradient(#f8b314, #f39312);
+    border: none;
+    border-radius: 0.4vw;
+    color: #fff;
+    width: 90%;
+    margin-top: 0.1vw;
+    height: 3vw;
+    align-self: center;
+    font-size: 1.4vw;
+    opacity: 0.5;
+}
+
+section:nth-child(2) {
+    margin-left: 12.2vw;
+    margin-top: -1vw;
+}
+
+#ruleta {
+    display: flex;
+}
+
+.circulos {
+    width: 11vw;
+}
+
+.italic {
+    font-family: robotoItalic;
+}
+
+.italicBold {
+    font-family: robotoBoldItalic;
+}
+
+.orange {
+    color: #fbb03b;
+}
+
+/* Fonts */
+@font-face {
+    font-family: robotoBoldItalic;
+    src: url(../font/Roboto-BoldItalic_0.ttf);
+  }
+@font-face {
+    font-family: robotoItalic;
+    src: url(../font/Roboto-LightItalic_0.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto-Light_0.ttf);
+}
