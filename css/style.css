@@ -1,6 +1,6 @@
 html, body {
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -8,6 +8,7 @@ body {
     background-size: cover;
     color: #d0d0da;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 header {
